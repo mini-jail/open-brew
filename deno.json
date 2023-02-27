@@ -1,0 +1,17 @@
+{
+  "fmt": {
+    "options": {
+      "indentWidth": 2,
+      "lineWidth": 80,
+      "semiColons": false
+    }
+  },
+  "compilerOptions": {
+    "lib": ["DOM", "ESNext", "deno.ns"]
+  },
+  "tasks": {
+    "build": "deno bundle ./src/app.ts ./static/app.js",
+    "dev": "deno bundle --watch ./src/app.ts ./static/app.js",
+    "serve": "deno run -A ./mod.ts"
+  }
+}
